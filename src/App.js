@@ -32,6 +32,7 @@ import './App.css';
         <div className="leftPanel">
         <SearchBar onTermChange={term => this.handleTermChange(term)}/>
         <GifPopulation gifs={this.state.gifs}/>
+        <FavoriteGifs favs={this.state.gifs} />
         </div>
       </div>
     );
