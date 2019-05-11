@@ -53,6 +53,17 @@ input {
   top:0 ;
 }
 
+.favoriteGifs {
+  background:transparent;
+  width:50%;
+  height:1000px;
+  position: absolute;
+  right:0;
+  top:75px;;
+  border-left:5px solid #66686D;
+  z-index: 1;
+}
+
 .likeBtn {
   background:blue;
   width:75px;
