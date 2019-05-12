@@ -21,6 +21,7 @@ import FavoriteGifs from './components/FavoriteGifs';
   class App extends Component{
 
     // Create array from gifs property to store from GifPopulation component
+    
     constructor(props) {
       super(props);
 
@@ -31,6 +32,7 @@ import FavoriteGifs from './components/FavoriteGifs';
   }
 
   // Makes the api call to giphy api with res = result for data being received. Added array index 0 to only show gif in GifPics component
+  
   handleTermChange(term){
     const url = `GIPHY_API`;
 
