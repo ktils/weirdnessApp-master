@@ -32,7 +32,7 @@ import FavoriteGifs from './components/FavoriteGifs';
 
   // Makes the api call to giphy api with res = result for data being received. Added array index 0 to only show gif in GifPics component
   handleTermChange(term){
-    const url = `http://api.giphy.com/v1/gifs/search?q=${term}&api_key=pA8B5nghSwXAPOfFKQgaxQWmG4NZicHd`;
+    const url = `GIPHY_API`;
 
     request.get(url, (err, res) => {
       this.setState({ gifs: res.body.data })
