@@ -4,9 +4,11 @@ import SearchBar from './components/SearchBar';
 import GifPopulation from './components/GifPopulation';
 import request from 'superagent';
 import './App.css';
+import FavoriteGifs from './components/FavoriteGifs';
 
   class App extends Component{
 
+    // Create array from gifs property to store from GifPopulation component
     constructor(props) {
       super(props);
 
@@ -16,6 +18,7 @@ import './App.css';
   
   }
 
+  // Makes the api call to giphy api with res = result for data being received. Added array index 0 to only show gif in GifPics component
   handleTermChange(term){
     const url = `http://api.giphy.com/v1/gifs/search?q=${term}&api_key=pA8B5nghSwXAPOfFKQgaxQWmG4NZicHd`;
 
@@ -32,6 +35,7 @@ import './App.css';
         <div className="leftPanel">
         <SearchBar onTermChange={term => this.handleTermChange(term)}/>
         <GifPopulation gifs={this.state.gifs}/>
+        <FavoriteGifs />
         
         </div>
       </div>
